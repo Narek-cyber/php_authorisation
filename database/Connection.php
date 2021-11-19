@@ -29,7 +29,7 @@ class Connection
         return new self;
     }
 
-    protected function run($query, $values, $toArray = false, $select, $insert, $update)
+    protected function run($query, $values, $toArray, $select, $insert, $update)
     {
         $stmt = $this->connection->prepare($query);
 
